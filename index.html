@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="favicon" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <img class="logo" src="./assets/images/logo.svg" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="list__item list__item_hover">Home</li>
+          <li class="list__item list__item_hover">New</li>
+          <li class="list__item list__item_hover">Popular</li>
+          <li class="list__item list__item_hover">Trending</li>
+          <li class="list__item list__item_hover">Categories</li>
+        </ul>
+        <img src="./assets/images/icon-menu.svg" alt="Mobile menu" class="mobile-menu" onclick="document.getElementById('nav').style.display = 'flex'">
+      </nav>
+    </header>
+    <div class="mobile__nav" id="nav">
+      <img src="./assets//images/icon-menu-close.svg" alt="Mobile Menu Close" class="mobile-menu__closed" onclick="document.getElementById('nav').style.display = 'none'">
+      <ul class="mobile__list">
+        <li class="mobile__item list__item_hover">Home</li>
+        <li class="mobile__item list__item_hover">New</li>
+        <li class="mobile__item list__item_hover">Popular</li>
+        <li class="mobile__item list__item_hover">Trending</li>
+        <li class="mobile__item list__item_hover">Categories</li>
+      </ul>
+    </div>
+    <main class="main">
+      <img class="main__photo" src="./assets/images/image-web-3-desktop.jpg" alt="Web3" srcset="./assets/images/image-web-3-desktop.jpg 1140w, ./assets/images/image-web-3-mobile.jpg 650w">
+      <div class="main__info">
+        <h1 class="main__title">The Bright Future of Web 3.0?</h1>
+        <div class="main__text">
+          <p class="main__body">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <button class="main__button main__button_hover">
+            Read more
+          </button>
+        </div>
+      </div>
+    </main>
+    <article class="right-article">
+      <h1 class="right-article__title">New</h1>
+      <article class="right-article__inner">
+          <h3 class="article-inner__title right-article_hover">Hydrogen VS Electric Cars</h3>
+          <p class="article-inner__body">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+      </article>
+      <article class="right-article__inner">
+        <h3 class="article-inner__title right-article_hover">The Downsides of AI Artistry</h3>
+        <p class="article-inner__body">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </article>
+      <article class="right-article__inner">
+        <h3 class="article-inner__title right-article_hover">Is VC Funding Drying Up?</h3>
+        <p class="article-inner__body">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </article>
+    <article class="bottom-article">
+      <article class="bottom-article__inner">
+        <img class="article__image" src="./assets//images/image-retro-pcs.jpg" alt="Retro Pc"">
+        <div class="bottom-article__text">
+          <h2 class="bottom-article__title">01</h2>
+          <h3 class="article-inner__title btm-article_hover">Reviving Retro PCs</h3>
+          <p class="bottom-article__body">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </article>
+      <article class="bottom-article__inner">
+        <img class="article__image" src="./assets//images/image-top-laptops.jpg" alt="Top Laptops">
+        <div class="bottom-article__text">
+          <h2 class="bottom-article__title">02</h2>
+          <h3 class="article-inner__title btm-article_hover">Top 10 Laptops of 2022</h3>
+          <p class="bottom-article__body">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </article>
+      <article class="bottom-article__inner">
+        <img class="article__image" src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+        <div class="bottom-article__text">
+          <h2 class="bottom-article__title">03</h2>
+          <h3 class="article-inner__title btm-article_hover">The Growth of Gaming</h3>
+          <p class="bottom-article__body">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </article>
+    </article>
+    <footer class="footer">
+      <p class="footer__text">Challenge by <a class="footer__link" href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl">Frontend Mentor</a>. Coded by <a class="footer__link" href="https://github.com/CalibB">CalibB</a>.</p> 
+    </footer>
+  </div>
+</body>
+</html>
